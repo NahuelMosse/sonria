@@ -1,0 +1,37 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the site folder
+        run: |
+          mkdir -p _site/design/components _site/assets
+          cp index.html styles.css app.js _site/
+          cp design/tokens.css design/base.css _site/design/
+          cp design/components/sonria.css _site/design/components/
+          for f in $(grep -oh 'assets/[A-Za-z0-9._-]*' index.html app.js | sort -u); do cp "$f" _site/assets/; done
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

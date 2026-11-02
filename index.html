@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonría · Dentistas en Caballito, Buenos Aires</title>
+  <meta name="description" content="Sonría es un consultorio odontológico de barrio en Caballito: dos odontólogas y un ortodoncista. Turnos por WhatsApp, guardia de lunes a sábado de 8 a 22 h.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="bar">
+    <a class="wordmark" href="#top" aria-label="Sonría, inicio">Sonría</a>
+    <nav aria-label="Secciones">
+      <ul class="bar__links">
+        <li><a href="#tratamientos">Tratamientos</a></li>
+        <li><a href="#obras-sociales">Obras sociales</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#como-llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--accent btn--small" href="#turno" data-book>Pedir turno</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <figure class="hero__picture" data-fade>
+        <div class="hero__frame">
+          <img class="is-on" src="assets/barrio-ingles-caballito-buenos-aires-argentina-2.jpg" width="1920" height="1080" fetchpriority="high" decoding="async" alt="Esquina del Barrio Inglés de Caballito: casas bajas, árboles altos y la vereda en sombra">
+          <img src="assets/jacaranda-mimosifolia-buenos-aires.jpg" width="1920" height="1440" decoding="async" alt="Un jacarandá en flor sobre una calle de Buenos Aires, contra el cielo azul">
+          <img src="assets/laguna-y-fuente-parque-centenario-buenos-aires.jpg" width="1920" height="823" decoding="async" alt="La laguna y la fuente del Parque Centenario, con árboles y edificios del barrio al fondo">
+        </div>
+        <figcaption class="hero__caption">Caballito, a la vuelta del consultorio</figcaption>
+      </figure>
+
+      <div class="hero__card">
+        <aside class="urgent" aria-labelledby="urgent-title">
+          <div class="urgent__text">
+            <h2 id="urgent-title" class="urgent__title">¿Te duele o se te rompió un diente?</h2>
+            <p>Guardia de lunes a sábado, de 8 a 22&nbsp;h. Escribinos y te damos hora hoy.</p>
+          </div>
+          <a class="btn btn--accent" data-wa="urgent" href="https://wa.me/5491155550142?text=Hola%2C%20es%20una%20urgencia%3A%20" target="_blank" rel="noopener">Urgencia por WhatsApp</a>
+        </aside>
+
+        <div class="hero__body">
+          <h1 id="hero-title" class="display lines">
+            <span class="line"><span data-line>Dentistas de barrio,</span></span>
+            <span class="line"><span data-line>en Caballito</span></span>
+          </h1>
+          <p class="lead" data-load>Somos dos odontólogas y un ortodoncista a cuatro cuadras de Primera Junta. Atendemos a grandes y chicos, sin apuro y explicándote cada paso.</p>
+          <div class="hero__actions" data-load>
+            <a class="btn btn--cta" href="#turno" data-book>
+              <span class="btn__label">Pedir turno</span>
+              <svg class="btn__smile" viewBox="0 0 120 20" aria-hidden="true" focusable="false"><path d="M4 4 Q60 34 116 4" /></svg>
+            </a>
+            <a class="link" href="#tratamientos">Ver tratamientos y precios</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="treatments" id="tratamientos" aria-labelledby="treat-title">
+      <div class="list-head" data-reveal>
+        <h2 id="treat-title" class="head">Tratamientos</h2>
+        <p class="list-head__count">7 tratamientos, precios orientativos</p>
+      </div>
+      <ul class="menu">
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--scaler" src="assets/dental-scaler.jpg" width="1280" height="605" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Limpieza y control</strong><span class="price">desde $&nbsp;38.000</span></p>
+            <p>Sacamos el sarro, pulimos y revisamos boca, encías y dientes.</p>
+            <p class="item__note">1 sesión de 40 minutos</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--resin" src="assets/composite-resin-fillng-1.jpg" width="1280" height="853" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Arreglos de caries</strong><span class="price">desde $&nbsp;45.000</span></p>
+            <p>Limpiamos la caries y rellenamos con resina del color del diente.</p>
+            <p class="item__note">1 sesión por diente</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--files" src="assets/endodontic-files-20-40.jpg" width="1280" height="853" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Endodoncia</strong><span class="price">desde $&nbsp;160.000</span></p>
+            <p>Tratamos el nervio para salvar el diente que duele, con anestesia.</p>
+            <p class="item__note">2 sesiones</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--braces" src="assets/teeth-braces-1.jpg" width="1280" height="853" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Ortodoncia</strong><span class="price">desde $&nbsp;95.000 por mes</span></p>
+            <p>Brackets o alineadores para acomodar los dientes, a cualquier edad.</p>
+            <p class="item__note">Un control por mes, de 18 a 24 meses</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--implant" src="assets/x-ray-of-root-analogue-dental-implant.jpg" width="1280" height="1007" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Implantes</strong><span class="price">desde $&nbsp;850.000</span></p>
+            <p>Reemplazamos un diente perdido con un implante de titanio y su corona.</p>
+            <p class="item__note">3 sesiones a lo largo de 4 meses</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--whitening" src="assets/office-teeth-whitening.jpg" width="1280" height="719" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Blanqueamiento</strong><span class="price">desde $&nbsp;120.000</span></p>
+            <p>Aclaramos el tono de los dientes en el consultorio, con gel y luz.</p>
+            <p class="item__note">2 sesiones</p>
+          </div>
+        </li>
+        <li class="item" data-reveal>
+          <span class="item__pic"><img class="pic--kids" src="assets/child-during-dental-checkup-in-clinic-with.jpg" width="1280" height="853" alt="" loading="lazy" decoding="async"></span>
+          <div class="item__text">
+            <p class="item__row"><strong>Odontopediatría</strong><span class="price">desde $&nbsp;30.000</span></p>
+            <p>La visita de los chicos, desde el primer diente, jugando y sin apuro.</p>
+            <p class="item__note">1 sesión de 30 minutos</p>
+          </div>
+        </li>
+      </ul>
+      <p class="fine" data-reveal>Los precios son de referencia en pesos y se confirman en la primera consulta. Con tarjeta de crédito, hasta 6 cuotas.</p>
+    </section>
+
+    <section class="calm" aria-labelledby="calm-title">
+      <h2 id="calm-title" class="sr-only">Sin miedo</h2>
+      <p class="statement" data-reveal>Te mostramos cada instrumento <span class="slot"><img class="pic--instruments" src="assets/dental-instruments-j1.jpg" width="1920" height="2664" alt="" loading="lazy" decoding="async"></span> antes de usarlo y paramos cuando levantás la mano. Los chicos se llevan su cepillo <span class="slot"><img class="pic--brushes" src="assets/toothbrushes-for-children-01.jpg" width="1280" height="849" alt="" loading="lazy" decoding="async"></span> de regalo.</p>
+      <div class="calm__aside" data-reveal>
+        <p>¿Le tenés miedo al dentista? Avisanos al pedir el turno: la primera consulta es para charlar y mirar, sin torno.</p>
+        <a class="btn btn--cta" href="#turno" data-book>
+          <span class="btn__label">Pedir turno</span>
+          <svg class="btn__smile" viewBox="0 0 120 20" aria-hidden="true" focusable="false"><path d="M4 4 Q60 34 116 4" /></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="insurers" id="obras-sociales" aria-labelledby="ins-title">
+      <div class="insurers__inner">
+        <div class="list-head" data-reveal>
+          <h2 id="ins-title" class="head">Obras sociales y prepagas</h2>
+          <p class="list-head__count"><span data-count>14</span> con convenio</p>
+        </div>
+
+        <div class="finder" data-reveal>
+          <label class="finder__label" for="ins-q">¿Cuál tenés?</label>
+          <input class="finder__input input" id="ins-q" type="search" autocomplete="off" spellcheck="false" placeholder="Escribí tu obra social o prepaga" aria-describedby="ins-verdict">
+          <p class="verdict" id="ins-verdict" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="plans">
+          <div class="plans__group" data-reveal>
+            <h3 class="plans__title">Prepagas <span data-group-count="prepaga">8</span></h3>
+            <ul class="plans__list" data-group="prepaga"></ul>
+          </div>
+          <div class="plans__group" data-reveal>
+            <h3 class="plans__title">Obras sociales <span data-group-count="obra">6</span></h3>
+            <ul class="plans__list" data-group="obra"></ul>
+          </div>
+        </div>
+        <p class="plans__private" data-reveal>¿No está en la lista? Te atendemos como particular: la consulta sale $&nbsp;25.000 y te damos factura para pedir el reintegro.</p>
+      </div>
+    </section>
+
+    <section class="team" id="equipo" aria-labelledby="team-title">
+      <div class="team__panel">
+        <div class="team__left">
+          <h2 id="team-title" class="team__title" data-reveal>Quiénes te van a atender</h2>
+          <figure class="team__picture" data-reveal>
+            <img src="assets/a-dental-chair-in-a-dentist-clinic.jpg" width="1280" height="960" alt="Un consultorio odontológico con el sillón, el equipo y los muebles de guardado" loading="lazy" decoding="async">
+          </figure>
+        </div>
+        <div class="team__right">
+          <article class="person" data-reveal>
+            <h3>Dra. Lucía Ferraro</h3>
+            <p class="person__role">Odontóloga general y odontopediatra · M.N. 31.482</p>
+            <p>Atiende a los chicos desde el primer diente y a sus familias. Les explica todo con el espejo en la mano.</p>
+          </article>
+          <article class="person" data-reveal>
+            <h3>Dra. Valeria Sosa</h3>
+            <p class="person__role">Odontóloga, implantes y estética · M.N. 28.915</p>
+            <p>Hace los arreglos, las endodoncias, los implantes y los blanqueamientos. Y la mayoría de las guardias.</p>
+          </article>
+          <article class="person" data-reveal>
+            <h3>Dr. Martín Iturralde</h3>
+            <p class="person__role">Ortodoncista · M.N. 24.307</p>
+            <p>Brackets y alineadores para chicos y grandes. Atiende martes, jueves y sábados por la mañana.</p>
+          </article>
+          <a class="btn btn--accent" href="#turno" data-book data-reveal>Pedir turno con el equipo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="turno" aria-labelledby="book-title">
+      <div class="coupon">
+        <div class="coupon__stub">
+          <h2 id="book-title" class="coupon__title" tabindex="-1">Pedí tu turno</h2>
+          <p>Elegís en cuatro pasos y al final se abre WhatsApp con el mensaje listo. Te confirmamos en el día.</p>
+          <dl class="stub">
+            <div><dt>Tratamiento</dt><dd data-stub="treatment">Sin elegir</dd></div>
+            <div><dt>Profesional</dt><dd data-stub="pro">Sin elegir</dd></div>
+            <div><dt>Día y franja</dt><dd data-stub="when">Sin elegir</dd></div>
+          </dl>
+        </div>
+
+        <form class="steps" id="booking" novalidate>
+          <span class="sr-only" id="steps-label">Pasos del turno</span>
+          <ol class="steps__track" aria-labelledby="steps-label">
+            <li data-track="0" aria-current="step">Tratamiento</li>
+            <li data-track="1">Profesional</li>
+            <li data-track="2">Día y franja</li>
+            <li data-track="3">Tus datos</li>
+          </ol>
+
+          <div class="steps__stage">
+            <fieldset class="step is-current" data-step="0" aria-describedby="err-treatment">
+              <legend class="step__title" tabindex="-1">¿Qué necesitás?</legend>
+              <div class="choices" data-choices="treatment"></div>
+              <p class="error" role="alert" id="err-treatment" data-error="treatment"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="1" aria-describedby="err-pro" hidden>
+              <legend class="step__title" tabindex="-1">¿Con quién?</legend>
+              <div class="choices" data-choices="pro"></div>
+              <p class="error" role="alert" id="err-pro" data-error="pro"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="2" hidden>
+              <legend class="step__title" tabindex="-1">¿Qué día y en qué franja?</legend>
+              <div class="days" role="radiogroup" aria-label="Día" aria-describedby="err-day" data-choices="day"></div>
+              <p class="error" role="alert" id="err-day" data-error="day"></p>
+              <div class="choices choices--band" role="radiogroup" aria-label="Franja" aria-describedby="err-band" data-choices="band"></div>
+              <p class="error" role="alert" id="err-band" data-error="band"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="3" hidden>
+              <legend class="step__title" tabindex="-1">Tus datos</legend>
+              <div class="field">
+                <label for="f-name">Nombre y apellido</label>
+                <input class="input" id="f-name" name="name" type="text" autocomplete="name" maxlength="60" aria-describedby="err-name">
+                <p class="error" role="alert" id="err-name" data-error="name"></p>
+              </div>
+              <div class="field">
+                <label for="f-phone">Celular</label>
+                <input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="11 5555 0142" aria-describedby="hint-phone err-phone">
+                <p class="hint" id="hint-phone">Con código de área, sin el 0 ni el 15.</p>
+                <p class="error" role="alert" id="err-phone" data-error="phone"></p>
+              </div>
+              <div class="field">
+                <label for="f-plan">Obra social o prepaga <span class="optional">(si tenés)</span></label>
+                <input class="input" id="f-plan" name="plan" type="text" autocomplete="off" maxlength="60">
+              </div>
+              <div class="field">
+                <label for="f-note">¿Algo que quieras contarnos? <span class="optional">(opcional)</span></label>
+                <textarea class="input" id="f-note" name="note" rows="3" maxlength="300" aria-describedby="hint-note err-note"></textarea>
+                <p class="hint" id="hint-note"><span data-note-count>0</span> de 300 caracteres</p>
+                <p class="error" role="alert" id="err-note" data-error="note"></p>
+              </div>
+            </fieldset>
+
+            <section class="step step--summary" data-step="4" aria-labelledby="sum-title" hidden>
+              <h3 class="step__title" id="sum-title" tabindex="-1">Revisá y mandalo</h3>
+              <dl class="summary" data-summary></dl>
+              <a class="btn btn--ink" data-wa="booking" href="https://wa.me/5491155550142" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+              <p class="hint">Se abre WhatsApp con este mensaje. No guardamos tus datos en ningún lado.</p>
+            </section>
+          </div>
+
+          <div class="steps__nav">
+            <button class="btn btn--ghost" type="button" data-back hidden>Volver</button>
+            <button class="btn btn--ink" type="submit" data-next>Seguir</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="visit" id="como-llegar" aria-labelledby="visit-title">
+      <h2 id="visit-title" class="row row--title" data-reveal>Cómo llegar</h2>
+      <p class="row" data-reveal><a href="https://www.openstreetmap.org/search?query=Rosario%20680%2C%20Caballito%2C%20Buenos%20Aires" target="_blank" rel="noopener">Rosario 680, 1.º&nbsp;B</a><span class="row__pic"><img src="assets/plaza-primera-junta-6.jpg" width="1920" height="1440" alt="La plaza Primera Junta, a cuatro cuadras" loading="lazy" decoding="async"></span></p>
+      <p class="row" data-reveal>Caballito, C1424 CABA</p>
+      <p class="row" data-reveal><span>Lun a vie 8 a 20&nbsp;h</span> <span>Sáb 8 a 13&nbsp;h</span></p>
+      <p class="row" data-reveal>Subte A: Primera Junta y Acoyte</p>
+      <p class="row" data-reveal>Colectivos 1, 2, 25, 26, 52, 84, 86 y 132</p>
+      <p class="row row--go" data-reveal>¿Venís? <a class="round" href="#turno" data-book aria-label="Pedir turno"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
+    </section>
+
+    <section class="faq" id="preguntas" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="faq__title head" data-reveal>Preguntas frecuentes</h2>
+      <div class="faq__list">
+        <details name="faq" data-reveal>
+          <summary>Me da mucho miedo ir al dentista. ¿Qué hago?</summary>
+          <p>Contanos cuando pidas el turno. La primera vez solo charlamos y miramos, sin torno. Te explicamos cada paso antes de hacerlo y paramos cuando levantás la mano.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>¿Desde qué edad atienden a los chicos?</summary>
+          <p>Desde el primer diente. Conviene una primera visita cerca del año, para que conozcan el consultorio jugando.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>¿Qué cuenta como urgencia?</summary>
+          <p>Un dolor que no te deja dormir, un diente roto o flojo por un golpe, una hinchazón en la cara o un sangrado que no para. Escribinos al WhatsApp de guardia, de lunes a sábado de 8 a 22&nbsp;h.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>¿Cuándo me confirman el turno?</summary>
+          <p>El mismo día hábil, por WhatsApp. Si la franja que elegiste está llena, te proponemos la más cercana.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>¿Qué traigo a la primera consulta?</summary>
+          <p>DNI, la credencial de tu obra social o prepaga y, si tenés, radiografías o estudios anteriores.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>Si no tengo obra social, ¿cómo pago?</summary>
+          <p>En efectivo, con transferencia o con tarjeta. Con tarjeta de crédito, hasta 6 cuotas. Siempre te damos factura.</p>
+        </details>
+        <details name="faq" data-reveal>
+          <summary>¿Se puede llegar sin subir escaleras?</summary>
+          <p>Sí. Estamos en un primer piso con ascensor y la entrada del edificio no tiene escalones.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" aria-labelledby="foot-title">
+    <h2 id="foot-title" class="mark">
+      <span aria-hidden="true">S</span><span aria-hidden="true">o</span><span aria-hidden="true">n</span><span aria-hidden="true">r</span><span aria-hidden="true">í</span><span aria-hidden="true">a</span><b class="sr-only">Sonría</b>
+    </h2>
+    <div class="foot__cols">
+      <ul>
+        <li><a href="#tratamientos">Tratamientos</a></li>
+        <li><a href="#obras-sociales">Obras sociales</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#turno">Pedir turno</a></li>
+      </ul>
+      <ul>
+        <li><a href="#como-llegar">Cómo llegar</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <address class="foot__contact">
+        <p>Rosario 680, 1.º B, Caballito</p>
+        <p>WhatsApp <a href="https://wa.me/5491155550142" target="_blank" rel="noopener">11 5555-0142</a></p>
+        <p>Directora médica: Dra. Valeria Sosa, M.N. 28.915</p>
+      </address>
+    </div>
+    <p class="credits">Fotos de Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Barrio_Ingl%C3%A9s,_Caballito,_Buenos_Aires,_Argentina_(2).jpg">«Barrio Inglés, Caballito»</a> de OneEuropeanHeart, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Jacaranda_mimosifolia,_Buenos_Aires.jpg">«Jacaranda mimosifolia, Buenos Aires»</a> de Raf24, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Laguna_y_fuente_Parque_Centenario,_Buenos_Aires.jpg">«Laguna y fuente Parque Centenario»</a> de Roberto Fiadone, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Est_Primera_Junta_03.jpg">«Est Primera Junta 03»</a> de Gastón Cuello, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Plaza_Primera_Junta_(6).jpg">«Plaza Primera Junta (6)»</a> de JonySniuk, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Dental_instruments_J1.jpg">«Dental instruments J1»</a> de Jamain, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Dental_scaler.jpg">«Dental scaler»</a> de Haragayato, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>; <a href="https://commons.wikimedia.org/wiki/File:Composite_resin_fillng_1.jpg">«Composite resin fillng 1»</a> de Albert, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Endodontic_Files_20-40.jpg">«Endodontic Files 20-40»</a> de Hanabishi, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Teeth_Braces_(1).jpg">«Teeth Braces (1)»</a> de Suyash Dwivedi, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:X-ray_of_root_analogue_dental_implant_two_rooted_left_lower_molar.jpg">«X-ray of root analogue dental implant»</a> de Logicwhatelse, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Office_Teeth_Whitening.jpg">«Office Teeth Whitening»</a> de Cory Doctorow, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Child_during_dental_checkup_in_clinic_with_dentist_examining_teeth.jpg">«Child during dental checkup»</a> de Shixart1985, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:A_dental_chair_in_a_dentist_clinic_in_North_Carolina,_United_States.jpg">«A dental chair in a dentist clinic»</a> de Harrison Keely, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Toothbrushes_for_Children_-_01.jpg">«Toothbrushes for Children - 01»</a> de Poulpy, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>.</p>
+    <div class="foot__last">
+      <p>© 2026 Sonría, consultorio odontológico</p>
+      <a class="btn btn--accent btn--small" data-wa="plain" href="https://wa.me/5491155550142" target="_blank" rel="noopener">Escribinos</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "sonria",
+  "private": true,
+  "description": "Sitio de una página de Sonría, consultorio odontológico de barrio en Caballito",
+  "scripts": {
+    "test": "playwright test -c apps/e2e/playwright.config.js",
+    "serve": "node apps/e2e/serve.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "axe-core": "^4.13.0"
+  }
+}

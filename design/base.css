@@ -1,0 +1,39 @@
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--space-88); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--step-body);
+  line-height: 1.5;
+  font-optical-sizing: auto;
+  overflow-wrap: break-word;
+}
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, textarea { font: inherit; color: inherit; }
+
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: var(--radius-4); }
+.urgent :focus-visible, .team :focus-visible, .foot :focus-visible, .btn--ink:focus-visible { outline-color: var(--mint); }
+
+/* Visually hidden by clip-path and a near-zero scale rather than a 1 px overflow box: the text keeps its own size, so nothing it holds is cut off. */
+.sr-only {
+  position: absolute; width: max-content; padding: 0; margin: 0; border: 0;
+  white-space: nowrap; clip-path: inset(50%); transform: scale(0.01); transform-origin: 0 0; pointer-events: none;
+}
+.skip {
+  position: absolute; left: 12px; top: -64px; z-index: 50;
+  background: var(--ink); color: var(--white); padding: var(--space-12) var(--space-18); border-radius: var(--smile);
+  text-decoration: none; font-weight: 500; transition: top var(--t-ui) var(--ease-out);
+}
+.skip:focus { top: 12px; }
+
+.head { font-size: var(--step-head); font-weight: 600; letter-spacing: -0.035em; line-height: 0.98; text-wrap: balance; }
+/* Tight display leading: the descenders get padding inside the box and the same negative margin outside, so the layout stays put. */
+.head, .team__title, .coupon__title { padding-bottom: var(--descent); margin-bottom: calc(-1 * var(--descent)); }
+.lead { font-size: var(--step-lead); line-height: 1.38; color: var(--ink); max-width: 34ch; text-wrap: pretty; }
+.fine { font-size: var(--step-body); color: var(--muted); max-width: 56ch; }
