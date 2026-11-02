@@ -19,7 +19,7 @@ El turno no guarda ni envía datos: solo arma un mensaje de WhatsApp. El sitio n
 
 ## Fotos
 
-Todas son de Wikimedia Commons, con licencia libre; autor y licencia de cada una están en el pie de la página y en `assets/credits.json`.
+Las del barrio son de Wikimedia Commons, con licencia libre; autor y licencia de cada una están en el pie de la página y en `assets/credits.json`. Las de tratamientos, instrumentos y consultorio (`assets/sonria-*.jpg`) son ilustrativas, generadas con IA para el sitio.
 
 ## Tests
 

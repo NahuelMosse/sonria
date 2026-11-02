@@ -149,15 +149,10 @@
   display: inline-block; width: 4em; height: 1.5em; vertical-align: -0.3em; margin-inline: var(--space-0-1em);
   border-radius: var(--radius-6) var(--radius-6) var(--radius-1-4em) var(--radius-1-4em) / var(--radius-6) var(--radius-6) var(--radius-1em) var(--radius-1em); overflow: hidden; background: var(--surface-2);
 }
-.pic--scaler { --o: 88% 88%; --z: 2.2; --p: 88% 88%; }
-.pic--resin { --o: 50% 50%; --z: 1; }
-.pic--files { --o: 50% 50%; --z: 1.5; --p: 50% 45%; }
-.pic--braces { --o: 50% 40%; --z: 1.1; --p: 50% 40%; }
-.pic--implant { --o: 50% 50%; --z: 1.1; --p: 50% 40%; }
-.pic--whitening { --o: 50% 50%; --z: 1.1; --p: 40% 55%; }
-.pic--kids { --o: 50% 50%; --z: 1; --p: 100% 30%; }
-.pic--instruments { --z: 1.6; --o: 67% 69%; --p: 50% 99%; }
-.pic--brushes { --z: 2.6; --o: 27% 28%; --p: 27% 28%; }
+.pic--files, .pic--implant { --p: 50% 20%; }
+.pic--braces { --p: 50% 60%; }
+.pic--kids { --p: 50% 35%; }
+.pic--instruments { --z: 1.3; --p: 50% 98%; }
 .slot img { width: 100%; height: 100%; object-fit: cover; object-position: var(--p, 50% 50%); transform-origin: var(--o, 50% 50%); transform: scale(var(--z, 1)); }
 .calm__aside { display: grid; gap: var(--space-22); justify-items: start; max-width: 44ch; }
 .calm__aside p { color: var(--ink); }
