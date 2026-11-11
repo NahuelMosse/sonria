@@ -29,7 +29,7 @@ jobs:
           cp design/tokens.css design/base.css _site/design/
           cp design/components/sonria.css _site/design/components/
           for f in $(grep -oh 'assets/[A-Za-z0-9._-]*' index.html app.js | sort -u); do cp "$f" _site/assets/; done
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
